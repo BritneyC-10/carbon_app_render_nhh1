@@ -7,10 +7,10 @@ import os
 application = Flask(__name__)
 
 ### Code GitHub
-# application.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
-# DBVAR=os.environ.get("DATABASE")
-# application.config['SQLALCHEMY_DATABASE_URI'] = DBVAR 
-# application.config['SQLALCHEMY_BINDS'] ={'transport': DBVAR}
+application.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
+DBVAR=os.environ.get("DATABASE")
+application.config['SQLALCHEMY_DATABASE_URI'] = DBVAR 
+application.config['SQLALCHEMY_BINDS'] ={'transport': DBVAR}
 
 ### Code Computer
 
